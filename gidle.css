@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    display: block;
 }
 h1 {
     margin: 0; /* Reset margin for the h1 element */
@@ -26,3 +27,24 @@ body {
     background-color: violet; /* Fallback color */
     float:left;
 } 
+.navbar ul{
+    list-style-type: none;
+    background-color: violet;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+}
+.navbar a:hover{
+    background-color: tomato;
+}
+.navbar li{ /*to make horizontal bar*/
+    float: left;
+}
