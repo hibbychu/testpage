@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show/Hide Text Example</title>
+<style>
+  #long-text {
+    display: none; /* Hide by default */
+    white-space: pre-wrap; /* Preserve formatting and wrap text */
+  }
+</style>
+</head>
+<body>
+
+<button onclick="toggleText()">Show/Hide Text</button>
+
+<pre id="long-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+</pre>
+
+<script>
+function toggleText() {
+  var text = document.getElementById("long-text");
+  console.log(`cock 1 2 3`);
+  console.log(text);
+  console.log(`hair 1 2 3 4 5`);
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

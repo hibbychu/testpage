@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
-    display: block;
+}
+.lyrics{
+    display: none;
+}
+#moresites {
+    width: 100dvw;
 }
 h1 {
     margin: 0; /* Reset margin for the h1 element */
@@ -13,6 +18,13 @@ h1 div {
     column-gap: 20px; /* Gap between columns */
     padding: 10px; /* Padding inside the multicolumn container */
     min-height: 350px;
+}
+.moresitesmulticolumn {
+    column-count: 3; /* Number of columns */
+    column-gap: 0px; /* Gap between columns */
+    padding: 0px; /* Padding inside the multicolumn container */
+    min-height: 2000px;
+    max-width: 4000px;
 }
 .column-content {
     break-inside: avoid; /* Prevents column breaks within the content */
@@ -47,4 +59,15 @@ body {
 }
 .navbar li{ /*to make horizontal bar*/
     float: left;
+}
+#moresites{
+    font-size: 30px;
+    margin: 10px;
+}
+#gallery{
+    text-align: center;
+}
+#gallery img{
+    display: inline-block;
+    margin: 20px;
 }

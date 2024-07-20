@@ -1,14 +1,16 @@
+let memberlist = ["G-IDLE", "Soyeon", "Miyeon", "Minnie", "Yuqi", "Shuhua", "Soojin"];
 let selectedMember = "G-IDLE";
-console.log(`1`);
+
+// const img = document.querySelector('video')
+
 function getSelectedMember(){
-    hideText(selectedMember);
-    
-    console.log(`2`);
+    console.log(`221`);
+    for(let i = 0; i < memberlist.length; i++){
+        hideText(memberlist[i]);
+    }
 
     selectedMember = document.getElementById("member").value;
-    document.getElementById("selectedMember").innerText = "Selected Member: " + selectedMember;
-
-    console.log(selectedMember); 
+    document.getElementById("selectedMember").innerText = "Selected: " + selectedMember;
 
     unhideText(selectedMember);
 }   
@@ -19,9 +21,16 @@ function hideText(selectedMember) {
 }
 
 function unhideText(selectedMember) {
-    console.log(`3`);
     let textToToggle = document.getElementById(selectedMember);
-    console.log(`4`);
     textToToggle.style.display = "block"; 
-    console.log(`5`);
+}
+
+function showLyrics(hiddenlyrics){
+    console.log(`1`);
+    console.log(hiddenlyrics);
+    let lyricstext = document.getElementById(hiddenlyrics);
+    console.log(lyricstext);
+    console.log(`frappe latte`);
+    // img.src='video/831.mp4';
+    return lyricstext.classList.toggle("lyrics")
 }

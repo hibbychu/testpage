@@ -2,14 +2,14 @@
 <html>
     <head>
         <link rel="icon" type = "image/jpg" href="images/isway.webp">
-        <title>G-IDLE</title>
+        <title>G-IDLE Videos</title>
         <link rel="stylesheet" href="gidle.css">
     </head> 
     <body>
         <header>
             <image src="images/GIDLE.svg" width="190px"></image>
             <h1>
-                <span style="background-color:tomato">GIDLE LIVE</span>
+                <span style="background-color:tomato">GIDLE COLLECTION</span>
             </h1>
             <hr>
         </header>
@@ -28,14 +28,14 @@
                     <h1>
                         <div style="background-color: tomato">Abracadabra</div>
                     </h1>
-                    <video src="video/abracadabra.mp4" width="500px" controls></video>
+                    <video src="video/abracadabra.mp4" height="250px" controls></video>
                     <p>
                         <a href="https://www.youtube.com/watch?v=DMyjJBEVxSI" target="_blank" title="original video">
                             Original Video Link
                         </a>  
                     </p>
-                    <pre style="font-size: 20px;"><big><u>LYRCIS</u></big></pre>
-                    <pre>
+                    <button id="lyricsbutton" onclick="showLyrics('abracadabra lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre class="lyrics" id="abracadabra lyrics">
 이러다 미쳐 내가, 여리여리 착하던 그런 내가
 ileoda michyeo naega, yeoliyeoli chaghadeon geuleon naega
 
@@ -175,14 +175,14 @@ anin cheog neol mannaleo ga tto, tto
                     <h1>
                     <div style="background-color: tomato">Nxde</div>
                     </h1>
-                    <video src="video/nxde.mp4" width = "500px" controls></video>
+                    <video src="video/nxde.mp4" height="250px" controls></video>
                     <p>
                         <a href="https://www.youtube.com/watch?v=7w-hCKWzJZE" target="_blank" title="original video">
                             Original Video Link
                         </a>
                     </p>
-                    <pre style="font-size: 20px;"><big><u>LYRCIS</u></big></pre>
-                    <pre>
+                    <button id="lyricsbutton" onclick="showLyrics('nxde lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="nxde lyrics" class="lyrics">
 Why you think that 'bout nude? 'Cause your view's so rude
 Why you think that 'bout nude? 'Cause your view's so rude
 
@@ -337,14 +337,14 @@ Nude
                     <h1>
                         <div style="background-color: tomato">想見你想見你想見你</div>
                     </h1>
-                    <video src="video/831.mp4" width = "500px" controls></video>
+                    <video src="video/831.mp4" height="250px" controls></video>
                     <p>
                         <a href="https://www.youtube.com/watch?v=ep6glCFMmiI" target="_blank" title="original video">
                             Original Video Link
                         </a>
                     </p>
-                    <pre style="font-size: 20px;"><big><u>LYRCIS</u></big></pre>
-                    <pre>
+                    <button id="lyricsbutton" onclick="showLyrics('831 lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="831 lyrics" class="lyrics">
 dang ai qing yi luo cheng yi ji
 當愛情遺落成遺跡
 yong xiang xing ke hua cheng hui yi
@@ -465,14 +465,14 @@ zai deng dai yi ju wo yuan yi
                     <h1>
                         <div style="background-color: tomato">Fate</div>
                     </h1>
-                    <video src="video/fate.mp4" width = "500px" controls></video>
+                    <video src="video/fate.mp4" height="250px" controls></video>
                     <p>
                         <a href="https://www.youtube.com/watch?v=JIMr1p-P_ms" target="_blank" title="Original Video">
                             Original Video Link
                         </a>
                     </p>
-                    <pre style="font-size: 20px;"><big><u>LYRCIS</u></big></pre>
-                    <pre>
+                    <button id="lyricsbutton" onclick="showLyrics('fate lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="fate lyrics" class="lyrics">
 Oneuldo achimen ibe ppangeul mulgo
 Ttokgachi harureul sijakago
 Onjongil han sonen aiseu amerikano
@@ -527,14 +527,14 @@ Naneun apeun geon ttak jilsaeginikka
                     <h1>
                         <div style="background-color: tomato">Klaxon</div>
                     </h1>
-                    <video src="video/klaxon.mp4" width = "500px" controls></video>
+                    <video src="video/klaxon.mp4" height="250px" controls></video>
                     <p>
                         <a href="https://www.youtube.com/watch?v=FAT2rvgIH9w" target="_blank" title="original video">
                             Original Video Link
                         </a>
                     </p>
-                    <pre style="font-size: 20px;"><big><u>LYRCIS</u></big></pre>
-                    <pre>
+                    <button id="lyricsbutton" onclick="showLyrics('klaxon lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="klaxon lyrics" class="lyrics">
 What time is it now?
 Time for Summer
 Umm 1 2
@@ -621,50 +621,545 @@ Woo woo ah woo
 Honk honk hit the keullaksheon
                     </pre>
                 </div>
+                <div class="column-content">
+                    <h1>
+                        <div style="background-color: tomato">Eyes Nose Lips</div>
+                    </h1>
+                    <video src="video/eyesnoselipsminnie.mp4" height="250px" controls></video>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=RbY3rp9hbeQ&t=21s" target="_blank" title="original video">
+                            Original Video Link
+                        </a>
+                    </p>
+                    <button id="lyricsbutton" onclick="showLyrics('eyesnoselips lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="eyesnoselips lyrics" class="lyrics">
+mianhae mianhae hajima
+naega chorahaeji janha
+ppalgan yeppeun ipsullo
+eoseo nareul jugigo ga
+naneun gwaenchanha
+majimageuro nareul barabwajwo
+amureochi anheun deut useojwo
+nega bogo sipeun ttae giokhal su itge
+naui meorissoge ne eolgul geureol su itge
+
+neol bonael su omneun naui yoksimi
+jibchagi dweeo neol gadwotgo
+hoksi ireon na ttaeme himdeureotni
+amu daedap eomneun neo
+babocheoreom wae neoreul jiuji mothae
+neon tteonabeoryeotneunde
+
+neoui nun, ko, ib
+nal manjideon ne songil
+jageun sontopkkaji da
+yeojeonhi neol neukkil su itjiman
+kkeojin bulkkotcheoreom
+tadeureogabeorin uri sarang modu da
+neomu apeujiman ijen neol
+chueogira bureulge
+
+saranghae saranhaetjiman
+naega bujokhaesseotna bwa
+hoksi uyeonirado
+hansunganmanirado neol
+bolsu isseulkka
+
+haru haruga buranhaejyeo
+ne modeulge galsurok huimihaejyeo
+sajin soge neoneun wae haemalge unneunde
+uriege dagaoneun ibyeoreul moreun chae
+
+neol bonael su eomneun naui yoksimi
+jibchagi dweeo neol gadwotgo
+hoksi ireon na ttaeme himdeureotni
+amu daedap eomneun neo
+babocheoreom wae neoreul jiuji mothae
+neon tteonabeoryeotneunde
+
+neoui nun, ko, ib
+nal manjideon ne songil
+jageun sontopkkaji da
+yeojeonhi neol neukkil su itjiman
+kkeojin bulkkotcheoreom
+tadeureogabeorin uri sarang modu da
+neomu apeujiman ijen neol
+chueogira bureulge
+
+namaneul barabodeon neoui kkaman nun
+hyanggiroun sumeul dameun neoui ko
+saranghae saranghae
+naege soksogideon geu ib sureul nan…
+
+neoui nun, ko, ib
+nal manjideon ne songil
+jageun sontopkkaji da
+yeojeonhi neol neukkil su itjiman
+kkeojin bulkkotcheoreom
+tadeureogabeorin uri sarang modu da
+neomu apeujiman ijen neol
+chueogira bureulge
+                    </pre>
+                </div>
+            </div>
+            <div class="multicolumn">
+                <div class="column-content">
+                    <h1>
+                        <div style="background-color: tomato">Super Lady</div>
+                    </h1>
+                    <video src="video/superlady.mp4" height="250px" controls></video>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=g_WLSX5JbuE" target="_blank" title="Original Video">
+                            Original Video Link
+                        </a>
+                    </p>
+                    <button id="lyricsbutton" onclick="showLyrics('super lady lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="super lady lyrics" class="lyrics">
+I am the top, super lady (oh-oh-oh)
+I am the top, super lady (oh-oh-oh)
+
+I never lose, yeah ('cause got a superpower)
+I never lose, yeah ('cause got a superpower)
+
+I am a god, super lady (oh-oh-oh)
+I am a god, super lady (oh-oh-oh)
+
+I never die, 봤지? 모두 follow
+I never die, 봤지? 모두 follow
+Boy, boy, boy, 거기 비켜 어서
+Boy, boy, boy, geogi bikyeo eoseo
+
+우린 love, love, love, 따위 하긴 바빠
+ulin love, love, love, ttawi hagin bappa
+
+여긴 war, war, war, 자비 따윈 없어
+yeogin war, war, war, jabi ttawin eobs-eo
+
+날 막는다면, slay it
+nal magneundamyeon, slay it
+남자들의 뻔한 가식
+namjadeul-ui ppeonhan gasig
+
+(Drop it) 억 소리 나는 그 사치
+(Drop it) eog soli naneun geu sachi
+
+영웅은 조금의 흔들릴 틈 없이 ready to shoot
+yeong-ung-eun jogeum-ui heundeullil teum eobs-i ready to shoot
+입술이 다 번져도, 그 어떤 놈보다 멋지게
+ibsul-i da beonjyeodo, geu eotteon nomboda meosjige
+
+(누구보다 멋지게) whoa-oh-oh
+(nuguboda meosjige) whoa-oh-oh
+
+웃어 보이지 더 거칠게, 독하다 해, that's my name
+us-eo boiji deo geochilge, doghada hae, that's my name
+
+I never bow on my way, yeah
+I never bow on my way, yeah
+Lady, lady, call me, "Super lady"
+Lady, lady, call me, "Super lady"
+
+Lady, lady
+Lady, lady
+
+Follow ladies (uh-huh), onward ladies (uh-huh)
+Follow ladies (uh-huh), onward ladies (uh-huh)
+
+Super ladies (uh-huh), 하나, 둘, 셋 (ah)
+Super ladies (uh-huh), 하나, 둘, 셋 (ah)
+Mama said, "넌 언젠가 세상을 망칠 악" (왜?)
+Mama said, "neon eonjenga sesang-eul mangchil ag" (wae?)
+
+그 겁에 질린 눈빛도 참 못됐으니까
+geu geob-e jillin nunbichdo cham mosdwaess-eunikka
+
+Oh, 그 눈빛은 패왕색 패기 여왕의 자질 the baddie
+Oh, geu nunbich-eun paewangsaeg paegi yeowang-ui jajil the baddie
+
+백이면 백이 다 기절한 각성에 겁먹은 devil
+baeg-imyeon baeg-i da gijeolhan gagseong-e geobmeog-eun devil
+
+그래, 뵈는 게 없거든 do you know-ow-ow?
+geulae, boeneun ge eobsgeodeun do you know-ow-ow?
+불길이 다 번져도, 그 어떤 놈보다 멋지게
+bulgil-i da beonjyeodo, geu eotteon nomboda meosjige
+
+(누구보다 멋지게) whoa-oh-oh
+(nuguboda meosjige) whoa-oh-oh
+
+뛰어들 테지 더 뜨겁게, 독하다 해, that's my name
+ttwieodeul teji deo tteugeobge, doghada hae, that's my name
+
+I never bow on my way, yeah
+I never bow on my way, yeah
+Lady, lady, call me, "Super lady"
+Lady, lady, call me, "Super lady"
+
+Lady, lady
+Lady, lady
+
+Follow ladies (uh-huh), onward ladies (uh-huh)
+Follow ladies (uh-huh), onward ladies (uh-huh)
+
+Super ladies (uh-huh), let go on fearless, we came to take a win
+Super ladies (uh-huh), let go on fearless, we came to take a win
+Back it up (oh)
+Back it up (oh)
+
+Back it up (oh-oh-oh)
+Back it up (oh-oh-oh)
+
+Back it up (oh)
+Back it up (oh)
+
+Back it up, everybody say
+Back it up, everybody say
+누가 우릴 부른다면, yes, sir, super fast
+nuga ulil buleundamyeon, yes, sir, super fast
+
+누가 우릴 막는다면, yes, sir, supernatural
+nuga ulil magneundamyeon, yes, sir, supernatural
+
+누가 봐도 우린, yes, stronger than Superman
+nuga bwado ulin, yes, stronger than Superman
+
+Yes, sir, I got super power, yes, sir, I'm a-
+Yes, sir, I got super power, yes, sir, I'm a-
+                    </pre>
+                </div>
+                <div class="column-content">
+                    <h1>
+                        <div style="background-color: tomato">Tomboy</div>
+                    </h1>
+                    <video src="video/tomboy.mp4" height="250px" controls></video>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=r--p1Vu6rfM" target="_blank" title="original video">
+                            Original Video Link
+                        </a>
+                    </p>
+                    <button id="lyricsbutton" onclick="showLyrics('tomboy lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="tomboy lyrics" class="lyrics">
+Look at you (yeah) 넌 못 감당해 날 (uh)
+Look at you (yeah) neon mos gamdanghae nal (uh)
+
+You took (umm) off hook (yeah)
+You took (umm) off hook (yeah)
+
+기분은 coke like, brr (brr)
+gibun-eun coke like, brr (brr)
+
+Look at my toe 나의 ex 이름 tattoo
+Look at my toe naui ex ileum tattoo
+
+I got to drink up now 니가 싫다 해도 좋아 (ah)
+I got to drink up now niga silhda haedo joh-a (ah)
+Why are you cranky, boy?
+Why are you cranky, boy?
+
+뭘 그리 찡그려, 너?
+뭘 그리 찡그려, 너?
+
+Do you want a blond Barbie doll?
+Do you want a blond Barbie doll?
+
+It's not here, I'm not a doll (like this if you can)
+It's not here, I'm not a doll (like this if you can)
+미친년이라 말해 what's the loss to me? ya
+michinnyeon-ila malhae what's the loss to me? ya
+
+사정없이 까보라고 you'll lose to me, ya
+sajeong-eobs-i kkabolago you'll lose to me, ya
+
+사랑 그깟 거 따위 내 몸에 상처 하나도 어림없지
+salang geukkas geo ttawi nae mom-e sangcheo hanado eolim-eobsji
+
+너의 썩은내 나는 향수나 뿌릴 바엔
+neoui sseog-eunnae naneun hyangsuna ppulil ba-en
+Yeah, I'm fu- tomboy
+Yeah, I'm fu- tomboy
+
+(Uh-uh, ah-ah, uh-uh)
+(Uh-uh, ah-ah, uh-uh)
+
+Yeah, I'll be the tomboy
+Yeah, I'll be the tomboy
+
+(Uh-uh, ah-ah)
+(Uh-uh, ah-ah)
+
+This is my attitude
+This is my attitude
+
+Yeah, I'll be the tomboy
+Yeah, I'll be the tomboy
+S-Y
+S-Y
+
+I don't wanna play this ping pong
+I don't wanna play this ping pong
+
+I would rather film a TikTok
+I would rather film a TikTok
+
+Your mom raised you as a prince, but
+Your mom raised you as a prince, but
+
+This is queendom, right?
+This is queendom, right?
+
+I like to dance, I love my friends
+I like to dance, I love my friends
+
+Sometimes we swear without cigarettes
+Sometimes we swear without cigarettes
+
+I'd like to "Eh", on drinking whiskey
+I'd like to "Eh", on drinking whiskey
+
+I won't change it, what the hell?
+I won't change it, what the hell?
+미친 척이라 말해 what's the loss to me? ya
+michin cheog-ila malhae what's the loss to me? ya
+
+사정없이 씹으라고 you're lost to me, ya
+sajeong-eobs-i ssib-eulago you're lost to me, ya
+
+사랑 그깟 거 따위 내 눈에 눈물 한 방울 어림없지
+salang geukkas geo ttawi nae nun-e nunmul han bang-ul eolim-eobsji
+
+너의 하찮은 말에 미소나 지을 바엔
+neoui hachanh-eun mal-e misona jieul ba-en
+Yeah, I'm fu- tomboy
+Yeah, I'm fu- tomboy
+
+(Uh-uh, ah-ah, uh-uh)
+(Uh-uh, ah-ah, uh-uh)
+
+Yeah, I'll be the tomboy
+Yeah, I'll be the tomboy
+
+(Uh-uh, ah-ah)
+(Uh-uh, ah-ah)
+
+This is my attitude
+This is my attitude
+
+Yeah, I'll be the tomboy
+Yeah, I'll be the tomboy
+Said you get up?
+Said you get up?
+
+Uh, you get the song right
+Uh, you get the song right
+
+You'll get what I mean "Tomboy", uh
+You'll get what I mean "Tomboy", uh
+La-la-la, la-la, la-la-la-la, la-la
+La-la-la, la-la, la-la-la-la, la-la
+
+La-la-la-la, la-la-la
+La-la-la-la, la-la-la
+
+(Umm, umm, you're brand new)
+(Umm, umm, you're brand new)
+La-la-la, la-la, la-la-la-la, la-la
+La-la-la, la-la, la-la-la-la, la-la
+
+La-la-la-la, la-la-la
+La-la-la-la, la-la-la
+
+(Three, two, one)
+(Three, two, one)
+It's neither man nor woman
+It's neither man nor woman
+
+Man nor woman
+Man nor woman
+
+It's neither man nor woman
+It's neither man nor woman
+
+Just me, I-DLE
+Just me, I-DLE
+It's neither man nor woman
+It's neither man nor woman
+
+Man nor woman
+Man nor woman
+
+It's neither man nor woman
+It's neither man nor woman
+
+Just me, loving tomboy
+Just me, loving tomboy
+                    </pre>
+                </div>
+                <div class="column-content">
+                    <h1>
+                        <div style="background-color: tomato">Lion</div>
+                    </h1>
+                    <video src="video/lion.mp4" height="250px" controls></video>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=Rp1AxSxlwQg" target="_blank" title="original video">
+                            Original Video Link
+                        </a>
+                    </p>
+                    <button id="lyricsbutton" onclick="showLyrics('lion lyrics')" style="font-size: 20px;"><big><u>LYRICS</u></big></button>
+                    <pre id="lion lyrics" class="lyrics">
+Ooh, I'm a lion, I'm a queen 아무도
+Ooh, I'm a lion, I'm a queen amudo
+
+그래 ooh 날 가둘 수 없어 아픔도
+geulae ooh nal gadul su eobs-eo apeumdo
+붉은 태양 아래 fire
+bulg-eun taeyang alae fire
+
+파랗게 타는 flower
+palahge taneun flower
+
+미지근한 너의 애를 태우게
+mijigeunhan neoui aeleul taeuge
+
+살짝 드러내는 sharp claw
+saljjag deuleonaeneun sharp claw
+
+달아오르는 상처
+dal-aoleuneun sangcheo
+
+발자국은 내 왕관을 맴돌게
+baljagug-eun nae wang-gwan-eul maemdolge
+난 나의 눈을 가리고 이 음악에 몸을 맡기고
+nan naui nun-eul galigo i eum-ag-e mom-eul matgigo
+
+뻔한 리듬을 망치고 사자의 춤을 바치고
+ppeonhan lideum-eul mangchigo sajaui chum-eul bachigo
+
+넌 나의 눈을 살피고 이 음악에 몸이 말리고
+neon naui nun-eul salpigo i eum-ag-e mom-i malligo
+
+뜨거운 리듬에 갇히고 사자에 춤을 바치고
+tteugeoun lideum-e gadhigo saja-e chum-eul bachigo
+Papapa, papapa, papapa
+Papapa, papapa, papapa
+
+It looks like a lion
+It looks like a lion
+
+I'm a queen like a lion
+I'm a queen like a lion
+
+Papapa, papapa, papapa
+Papapa, papapa, papapa
+
+It looks like a lion
+It looks like a lion
+
+I'm a queen like a lion, eh-oh
+I'm a queen like a lion, eh-oh
+그 강인한 울음은 너의 발을 내게 돌려
+geu gang-inhan ul-eum-eun neoui bal-eul naege dollyeo
+
+이 넓은 황야 속 크고 단단한 씨를 뿌려
+i neolb-eun hwang-ya sog keugo dandanhan ssileul ppulyeo
+
+그 웅장한 부름은 너의 맘을 내게 돌려
+geu ungjanghan buleum-eun neoui mam-eul naege dollyeo
+
+이 깊은 바닷속까지 거친 멜로딜 꽂아
+i gip-eun badas-sogkkaji geochin mellodil kkoj-a
+더 탐을 내지 말어 자릴 지키는 lion
+deo tam-eul naeji mal-eo jalil jikineun lion
+
+때로는 사나워 질지 모르니
+ttaeloneun sanawo jilji moleuni
+
+이제 환호의 음을 높여
+ije hwanhoui eum-eul nop-yeo
+
+모두 고개를 올려
+modu gogaeleul ollyeo
+
+어린 사자의 왕관을 씌우니
+eolin sajaui wang-gwan-eul ssuiuni
+난 나의 눈을 가리고 이 음악에 몸을 맡기고
+nan naui nun-eul galigo i eum-ag-e mom-eul matgigo
+
+뻔한 리듬을 망치고 사자의 춤을 바치고
+ppeonhan lideum-eul mangchigo sajaui chum-eul bachigo
+
+넌 나의 눈을 살피고 이 음악에 몸이 말리고
+neon naui nun-eul salpigo i eum-ag-e mom-i malligo
+
+뜨거운 리듬에 갇히고 사자에 춤을 바치고
+tteugeoun lideum-e gadhigo saja-e chum-eul bachigo
+Papapa, papapa, papapa
+Papapa, papapa, papapa
+
+It looks like a lion
+It looks like a lion
+
+I'm a queen like a lion
+I'm a queen like a lion
+
+Papapa, papapa, papapa
+Papapa, papapa, papapa
+
+It looks like a lion
+It looks like a lion
+
+I'm a queen like a lion, eh-oh
+I'm a queen like a lion, eh-oh
+쓸데없는 예의 따윈 물어뜯어
+sseuldeeobsneun yeui ttawin mul-eotteud-eo
+
+편견이란 답답한 우리는 무너뜨려
+pyeongyeon-ilan dabdabhan ulineun muneotteulyeo
+
+감히 또 누가 날 막고 또 누가 날 조종해
+gamhi tto nuga nal maggo tto nuga nal jojonghae
+
+조심해 다듬지 못한 발톱으로
+josimhae dadeumji moshan baltob-eulo
+
+아무도 가본 적이 없는 개척하는 길
+amudo gabon jeog-i eobsneun gaecheoghaneun gil
+
+뻔해 빠진 꼰대들은 혀를 차던 짓
+ppeonhae ppajin kkondaedeul-eun hyeoleul chadeon jis
+
+그걸 해내고서야 받는 박수는 더 짜릿한 맛이지
+geugeol haenaegoseoya badneun bagsuneun deo jjalishan mas-iji
+
+그걸 맛봤고 이제 부정할 수 없어 I'm a queen (queen)
+geugeol masbwassgo ije bujeonghal su eobs-eo I'm a queen (queen)
+Papapa, papapa, papapa
+Papapa, papapa, papapa
+
+It looks like a lion
+It looks like a lion
+
+I'm a queen like a lion
+I'm a queen like a lion
+
+Papapa, papapa, papapa
+Papapa, papapa, papapa
+
+It looks like a lion
+It looks like a lion
+
+I'm a queen like a lion, eh-oh
+I'm a queen like a lion, eh-oh
+Ooh, I'm a lion, I'm a queen 아무도
+Ooh, I'm a lion, I'm a queen amudo
+
+그래 ooh 길들일 수 없어 사랑도
+geulae ooh gildeul-il su eobs-eo salangdo
+                    </pre>
+                </div>
             </div>
             <br>
         </cinema>
         <br>
-        <p>
-            This is normal text
-        </p>
-        <p>
-            This is <b>bold</b> text
-        </p>
-        <p>
-            This is <i>italic</i> text
-        </p>
-        <p>
-            This is <u>underlined</u> text
-        </p>
-        <p>
-            This is <del>deleted</del> text
-        </p>
-        <p>
-            This is <big>big</big> text
-        </p>
-        <p>
-            This is <small>small</small> text
-        </p>
-        <p>
-            This is <sub>subscript</sub> text
-        </p>
-        <p>
-            This is <sup>superscript</sup> text
-        </p>
-        <p>
-            This is <tt>monospaced</tt> text
-        </p>
-        <p>
-            This is <mark style="background-color: lightblue">mark</mark> text
-        </p>
-        <p><span style="background-color: beige;">
-            This is <tt>monospaced</tt> and span text
-        </span>
-        </p>
-        <p><div style="background-color: aquamarine;">
-            This is <mark style="background-color: lightblue">mark</mark> and div text
-        </div>
-        
+        <script src="gidle.js"></script>
     </body>
 </html>
